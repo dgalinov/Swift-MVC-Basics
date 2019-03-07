@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gi0-TY-R7W">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="yyF-GY-njS">
+            <objects>
+                <splitViewController id="Gi0-TY-R7W" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="v34-AI-ybz" kind="relationship" relationship="masterViewController" id="9AO-9h-nmk"/>
+                        <segue destination="GdL-hC-CV3" kind="relationship" relationship="detailViewController" id="E8d-gz-gMc"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeh-ej-YWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="26"/>
+        </scene>
+        <!--ProfessionalFuture-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WantedToBeViewController" customModule="ProfessionalFutureLSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you wanted to be?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="E5x-Jv-Y16">
+                                <rect key="frame" x="15" y="74" width="345" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hdL-GM-vvA">
+                                <rect key="frame" x="82" y="603" width="211" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sox-Ht-Ywm">
+                                        <rect key="frame" x="39.5" y="0.0" width="132" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Developer"/>
+                                        <connections>
+                                            <segue destination="GdL-hC-CV3" kind="showDetail" identifier="developer" id="9QA-Cz-skw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEy-ax-vO9">
+                                        <rect key="frame" x="24" y="56" width="163" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="UX Designer"/>
+                                        <connections>
+                                            <segue destination="GdL-hC-CV3" kind="showDetail" identifier="uxDesigner" id="JpM-50-0O8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJY-dK-Izn">
+                                        <rect key="frame" x="0.0" y="112" width="211" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Project Manager"/>
+                                        <connections>
+                                            <segue destination="GdL-hC-CV3" kind="showDetail" identifier="projectManager" id="eRt-fQ-Bfo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E5x-Jv-Y16" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0vE-Rc-dRM"/>
+                            <constraint firstItem="hdL-GM-vvA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ISF-Hm-qph"/>
+                            <constraint firstItem="E5x-Jv-Y16" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="PDi-4g-KN6"/>
+                            <constraint firstItem="hdL-GM-vvA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b2b-wu-vIy"/>
+                            <constraint firstItem="E5x-Jv-Y16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yqv-I8-TUL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ProfessionalFuture" id="zkO-0T-mCc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="25.637181409295355"/>
+        </scene>
+        <!--Job Description View Controller-->
+        <scene sceneID="to9-zq-WhR">
+            <objects>
+                <viewController id="GdL-hC-CV3" customClass="JobDescriptionViewController" customModule="ProfessionalFutureLSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6HA-fX-9UQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="owj-Vx-Pj1">
+                                <rect key="frame" x="20" y="34" width="984" height="1302"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aOg-MR-ryD" firstAttribute="bottom" secondItem="owj-Vx-Pj1" secondAttribute="bottom" constant="10" id="JKC-ap-R2l"/>
+                            <constraint firstItem="owj-Vx-Pj1" firstAttribute="top" secondItem="aOg-MR-ryD" secondAttribute="top" constant="10" id="bhU-oA-wuD"/>
+                            <constraint firstItem="aOg-MR-ryD" firstAttribute="trailing" secondItem="owj-Vx-Pj1" secondAttribute="trailing" constant="20" id="ezY-gY-qun"/>
+                            <constraint firstItem="owj-Vx-Pj1" firstAttribute="leading" secondItem="aOg-MR-ryD" secondAttribute="leading" constant="20" id="uSu-rQ-zxl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aOg-MR-ryD"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="owj-Vx-Pj1" id="bBg-ui-puh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozq-Lj-XMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="769"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jFB-iA-UET">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v34-AI-ybz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M34-zv-gLu">
+                        <rect key="frame" x="0.0" y="24" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6Ag-Ye-TEs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKG-GB-Bdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="macbook.jpeg" width="775" height="500"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eRt-fQ-Bfo"/>
+    </inferredMetricsTieBreakers>
+</document>

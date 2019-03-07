@@ -59,8 +59,8 @@
 				EFA37A11221B079A00BB355A /* Counter.swift */,
 				EFA37A02221AF71900BB355A /* Main.storyboard */,
 				EFA37A00221AF71900BB355A /* ViewController.swift */,
-				EFA37A10221AF84A00BB355A /* Supporting files */,
 				EFA37A0A221AF71B00BB355A /* Info.plist */,
+				EFA37A10221AF84A00BB355A /* Supporting files */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
