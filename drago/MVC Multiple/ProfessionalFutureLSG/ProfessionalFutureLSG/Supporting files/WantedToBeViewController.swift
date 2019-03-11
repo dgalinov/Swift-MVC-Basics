@@ -11,9 +11,9 @@ import UIKit
 class WantedToBeViewController: UIViewController, UISplitViewControllerDelegate {
 
     let professionals = [
-        "developer":Professional(title: "Developer", imageName: "developer"),
-        "uxDesigner":Professional(title: "UX Designer", imageName: "uxDesigner"),
-        "projectManager":Professional(title: "Project Manager", imageName: "projectManager")
+        "developer":Professional(title: "Developer", imageName: "developer", labelDescription: "I'm a developer"),
+        "uxDesigner":Professional(title: "UX Designer", imageName: "uxDesigner", labelDescription: "I'm a UX Designer"),
+        "projectManager":Professional(title: "Project Manager", imageName: "projectManager", labelDescription: "I'm a Project Manager")
     ]
 
     override func awakeFromNib() {

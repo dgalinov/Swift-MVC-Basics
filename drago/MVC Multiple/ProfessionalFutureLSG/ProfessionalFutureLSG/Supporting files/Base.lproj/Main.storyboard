@@ -17,7 +17,7 @@
                 <splitViewController id="Gi0-TY-R7W" sceneMemberID="viewController">
                     <connections>
                         <segue destination="v34-AI-ybz" kind="relationship" relationship="masterViewController" id="9AO-9h-nmk"/>
-                        <segue destination="GdL-hC-CV3" kind="relationship" relationship="detailViewController" id="E8d-gz-gMc"/>
+                        <segue destination="Cff-ob-Kbz" kind="relationship" relationship="detailViewController" id="E8d-gz-gMc"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeh-ej-YWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -46,7 +46,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Developer"/>
                                         <connections>
-                                            <segue destination="GdL-hC-CV3" kind="showDetail" identifier="developer" id="9QA-Cz-skw"/>
+                                            <segue destination="Cff-ob-Kbz" kind="showDetail" identifier="developer" id="XeR-zK-rZu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEy-ax-vO9">
@@ -54,7 +54,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="UX Designer"/>
                                         <connections>
-                                            <segue destination="GdL-hC-CV3" kind="showDetail" identifier="uxDesigner" id="JpM-50-0O8"/>
+                                            <segue destination="Cff-ob-Kbz" kind="showDetail" identifier="uxDesigner" id="JpM-50-0O8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJY-dK-Izn">
@@ -62,7 +62,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Project Manager"/>
                                         <connections>
-                                            <segue destination="GdL-hC-CV3" kind="showDetail" identifier="projectManager" id="eRt-fQ-Bfo"/>
+                                            <segue destination="Cff-ob-Kbz" kind="showDetail" identifier="projectManager" id="eRt-fQ-Bfo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,26 +92,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="owj-Vx-Pj1">
-                                <rect key="frame" x="20" y="34" width="984" height="1302"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="developer.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="owj-Vx-Pj1">
+                                <rect key="frame" x="20" y="74" width="984" height="500"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqP-Lq-4y4">
+                                <rect key="frame" x="20" y="1346" width="984" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aOg-MR-ryD" firstAttribute="bottom" secondItem="owj-Vx-Pj1" secondAttribute="bottom" constant="10" id="JKC-ap-R2l"/>
-                            <constraint firstItem="owj-Vx-Pj1" firstAttribute="top" secondItem="aOg-MR-ryD" secondAttribute="top" constant="10" id="bhU-oA-wuD"/>
-                            <constraint firstItem="aOg-MR-ryD" firstAttribute="trailing" secondItem="owj-Vx-Pj1" secondAttribute="trailing" constant="20" id="ezY-gY-qun"/>
-                            <constraint firstItem="owj-Vx-Pj1" firstAttribute="leading" secondItem="aOg-MR-ryD" secondAttribute="leading" constant="20" id="uSu-rQ-zxl"/>
+                            <constraint firstItem="owj-Vx-Pj1" firstAttribute="top" secondItem="aOg-MR-ryD" secondAttribute="top" id="LYQ-Wq-diP"/>
+                            <constraint firstItem="aOg-MR-ryD" firstAttribute="bottom" secondItem="iqP-Lq-4y4" secondAttribute="bottom" id="SFr-Py-CSs"/>
+                            <constraint firstItem="iqP-Lq-4y4" firstAttribute="leading" secondItem="aOg-MR-ryD" secondAttribute="leading" constant="20" id="UYd-tL-uNo"/>
+                            <constraint firstItem="owj-Vx-Pj1" firstAttribute="leading" secondItem="aOg-MR-ryD" secondAttribute="leading" constant="20" id="dN1-FA-lcj"/>
+                            <constraint firstItem="aOg-MR-ryD" firstAttribute="trailing" secondItem="iqP-Lq-4y4" secondAttribute="trailing" constant="20" id="hc2-iV-9GU"/>
+                            <constraint firstItem="aOg-MR-ryD" firstAttribute="trailing" secondItem="owj-Vx-Pj1" secondAttribute="trailing" constant="20" id="oCE-go-irv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aOg-MR-ryD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="n4x-ET-vnu"/>
                     <connections>
                         <outlet property="imageView" destination="owj-Vx-Pj1" id="bBg-ui-puh"/>
+                        <outlet property="labelDescription" destination="iqP-Lq-4y4" id="jN2-o1-YQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozq-Lj-XMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="769"/>
+            <point key="canvasLocation" x="1705.078125" y="768.66764275256219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jFB-iA-UET">
@@ -131,11 +141,29 @@
             </objects>
             <point key="canvasLocation" x="36" y="26"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y9u-c6-97r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cff-ob-Kbz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fYv-ww-a0w">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GdL-hC-CV3" kind="relationship" relationship="rootViewController" id="AbE-u6-wRW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOl-xM-3rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.68749999999989" y="768.66764275256219"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="macbook.jpeg" width="775" height="500"/>
+        <image name="developer.jpeg" width="775" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eRt-fQ-Bfo"/>
+        <segue reference="XeR-zK-rZu"/>
     </inferredMetricsTieBreakers>
 </document>

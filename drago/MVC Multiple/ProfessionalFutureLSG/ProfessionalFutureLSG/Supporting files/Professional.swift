@@ -11,4 +11,5 @@ import Foundation
 struct Professional {
     var title: String
     var imageName: String
+    var labelDescription: String
 }

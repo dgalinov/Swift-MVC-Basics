@@ -12,11 +12,11 @@
 		EF7A383222316E98001769A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7A383022316E98001769A3 /* Main.storyboard */; };
 		EF7A383422316E9D001769A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7A383322316E9D001769A3 /* Assets.xcassets */; };
 		EF7A383722316E9D001769A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7A383522316E9D001769A3 /* LaunchScreen.storyboard */; };
-		EF7A384222317253001769A3 /* macbook2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7A383F22317253001769A3 /* macbook2.jpg */; };
-		EF7A384322317253001769A3 /* macbook3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7A384022317253001769A3 /* macbook3.jpg */; };
-		EF7A384422317253001769A3 /* macbook.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EF7A384122317253001769A3 /* macbook.jpeg */; };
 		EF7A384622317352001769A3 /* JobDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A384522317352001769A3 /* JobDescriptionViewController.swift */; };
 		EF7A384922317415001769A3 /* Professional.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A384822317415001769A3 /* Professional.swift */; };
+		EFFE846B2236A49E009196BC /* uxDesigner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFFE84682236A49E009196BC /* uxDesigner.jpg */; };
+		EFFE846C2236A49E009196BC /* projectManager.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFFE84692236A49E009196BC /* projectManager.jpg */; };
+		EFFE846D2236A49E009196BC /* developer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFFE846A2236A49E009196BC /* developer.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		EF7A383322316E9D001769A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7A383622316E9D001769A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF7A383822316E9D001769A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF7A383F22317253001769A3 /* macbook2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = macbook2.jpg; path = ../../../../../macbook2.jpg; sourceTree = "<group>"; };
-		EF7A384022317253001769A3 /* macbook3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = macbook3.jpg; path = ../../../../../macbook3.jpg; sourceTree = "<group>"; };
-		EF7A384122317253001769A3 /* macbook.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = macbook.jpeg; path = ../../../../../macbook.jpeg; sourceTree = "<group>"; };
 		EF7A384522317352001769A3 /* JobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionViewController.swift; sourceTree = "<group>"; };
 		EF7A384822317415001769A3 /* Professional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professional.swift; sourceTree = "<group>"; };
+		EFFE84682236A49E009196BC /* uxDesigner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uxDesigner.jpg; sourceTree = "<group>"; };
+		EFFE84692236A49E009196BC /* projectManager.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = projectManager.jpg; sourceTree = "<group>"; };
+		EFFE846A2236A49E009196BC /* developer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = developer.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,9 @@
 		EF7A383E22317232001769A3 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				EF7A384122317253001769A3 /* macbook.jpeg */,
-				EF7A383F22317253001769A3 /* macbook2.jpg */,
-				EF7A384022317253001769A3 /* macbook3.jpg */,
+				EFFE846A2236A49E009196BC /* developer.jpeg */,
+				EFFE84682236A49E009196BC /* uxDesigner.jpg */,
+				EFFE84692236A49E009196BC /* projectManager.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -153,10 +153,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7A384422317253001769A3 /* macbook.jpeg in Resources */,
+				EFFE846D2236A49E009196BC /* developer.jpeg in Resources */,
 				EF7A383722316E9D001769A3 /* LaunchScreen.storyboard in Resources */,
-				EF7A384222317253001769A3 /* macbook2.jpg in Resources */,
-				EF7A384322317253001769A3 /* macbook3.jpg in Resources */,
+				EFFE846B2236A49E009196BC /* uxDesigner.jpg in Resources */,
+				EFFE846C2236A49E009196BC /* projectManager.jpg in Resources */,
 				EF7A383422316E9D001769A3 /* Assets.xcassets in Resources */,
 				EF7A383222316E98001769A3 /* Main.storyboard in Resources */,
 			);
